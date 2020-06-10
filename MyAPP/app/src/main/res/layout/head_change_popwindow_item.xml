@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_margin="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.xuhao.myapp.View.CircleImageView
+        android:id="@+id/head_change_popwindow_head_img"
+        android:background="@drawable/button_main_course_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+</LinearLayout>

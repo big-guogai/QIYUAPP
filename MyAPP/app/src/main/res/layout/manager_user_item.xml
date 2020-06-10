@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manager_user_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/indent_history_item"
+    android:padding="6dp">
+
+    <RelativeLayout
+        android:id="@+id/manager_user_item_user_id_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/manager_user_item_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_key"
+            android:gravity="center"
+            android:text="@string/key_id"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manager_user_item_layout_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manager_user_item_user_id_layout"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/manager_user_item_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/user_name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/manager_user_item_user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manager_user_item_user_name"
+            android:padding="2dp"
+            android:text="@string/user_type"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/manager_user_item_layout_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manager_user_item_user_type">
+
+            <TextView
+                android:id="@+id/manager_user_item_handle_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:gravity="center"
+                android:text="详情处理"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

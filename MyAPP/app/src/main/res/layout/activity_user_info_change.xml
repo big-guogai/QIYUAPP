@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoChangeActivity">
+
+    <RelativeLayout
+        android:id="@+id/user_info_change_layout_up"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/cyna">
+
+        <ImageButton
+            android:id="@+id/user_info_change_button_back"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_main_course_search_back"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/personal_information"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/user_info_change_edit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/edit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_info_change_layout_down"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/user_info_change_layout_up"
+        android:layout_margin="2dp"
+        android:background="@drawable/user_info_item_style"
+        android:padding="3dp">
+
+        <RelativeLayout
+            android:id="@+id/user_info_change_layout_head_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:text="@string/my_head"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <com.xuhao.myapp.View.CircleImageView
+                android:id="@+id/user_info_change_head_change"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_main_course_head"
+                android:src="@mipmap/head" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/user_info_change_layout_head_change"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/user_info_change_layout_name_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_info_change_layout_head_change"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:text="@string/my_name"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/user_info_change_name_change"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:maxLength="8"
+                android:gravity="center"
+                android:text="@string/my_name"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/user_info_change_layout_name_change"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/user_info_change_layout_age_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_info_change_layout_name_change"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:text="@string/my_age"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/user_info_change_age_change"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/my_age"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/user_info_change_layout_age_change"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/user_info_change_layout_sex_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_info_change_layout_age_change"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:text="@string/my_sex"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/user_info_change_sex_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/user_info_change_sex_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/man" />
+
+                <RadioButton
+                    android:id="@+id/user_info_change_sex_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/woman" />
+            </RadioGroup>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

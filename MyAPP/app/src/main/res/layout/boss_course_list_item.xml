@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boss_course_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/boss_course_item"
+    android:padding="6dp">
+
+    <RelativeLayout
+        android:id="@+id/boss_course_list_layout_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/boss_course_list_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/course_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/boss_course_list_course_id"
+            android:text="@string/ID"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/boss_course_list_course_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/boss_course_list_layout_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boss_course_list_layout_up"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/boss_course_list_course_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boss_name"
+            android:textSize="13sp" />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/boss_course_list_course_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boss_course_list_course_information"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/boss_name" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boss_course_list_course_type"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/boss_course_list_course_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_yuan"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/boss_course_list_course_priceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/boss_course_list_course_price"
+                android:text="@string/boss_name"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/boss_course_list_course_info_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:text="@string/update_info"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

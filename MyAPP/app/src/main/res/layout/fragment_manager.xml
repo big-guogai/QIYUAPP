@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.ManagerFragment">
+
+    <LinearLayout
+        android:id="@+id/manager_layout_up"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/cyna"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/info_manager"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/manager_layout_down"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/manager_layout_up">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/manager_kind"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_indent_kind">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/manager_kind_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/manager_kind"
+            android:background="@color/white">
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+</RelativeLayout>

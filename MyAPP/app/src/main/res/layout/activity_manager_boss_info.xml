@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerBossInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/manager_boss_info_layout_up"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/cyna">
+
+        <ImageButton
+            android:id="@+id/manager_boss_info_back"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_main_course_search_back"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/boss_info"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/manager_boss_info_layout_down_handle"
+        android:layout_below="@id/manager_boss_info_layout_up">
+
+        <RelativeLayout
+            android:id="@+id/manager_boss_info_layout_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/manager_boss_info_layout_boss_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center"
+                    android:text="店铺ID"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/manager_boss_info_boss_id"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="店铺ID"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/manager_boss_info_layout_boss_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manager_boss_info_layout_boss_id"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center"
+                    android:text="@string/boss_name"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/manager_boss_info_boss_name"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:text="店铺名"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/manager_boss_info_layout_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manager_boss_info_layout_boss_name"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center"
+                    android:text="老板ID"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/manager_boss_info_user_id"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="老板ID"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/manager_boss_info_layout_boss_Introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manager_boss_info_layout_user_id"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center"
+                    android:text="@string/boss_Introduction"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/manager_boss_info_boss_Introduction"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:text="@string/boss_Introduction"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/manager_boss_info_layout_boss_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manager_boss_info_layout_boss_Introduction"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center"
+                    android:text="@string/boss_telephone"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/manager_boss_info_boss_telephone"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:text="@string/boss_telephone"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/manager_boss_info_layout_boss_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manager_boss_info_layout_boss_telephone"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center"
+                    android:text="店铺地址"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/manager_boss_info_boss_position"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:text="店铺地址"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/manager_boss_info_layout_boss_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manager_boss_info_layout_boss_position"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/manager_boss_info_text_boss_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center"
+                    android:text="@string/boss_photo"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/manager_boss_info_text_boss_photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/manager_boss_info_boss_photo_main1"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="1dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/manager_boss_info_boss_photo_main2"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="1dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/manager_boss_info_boss_photo_main3"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="1dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/manager_boss_info_boss_photo_main4"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="1dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/manager_boss_info_boss_photo_main5"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="1dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/manager_boss_info_boss_photo_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/hhh"
+                        app:srcCompat="@drawable/ic_plus" />
+
+                    <ImageButton
+                        android:id="@+id/manager_boss_info_boss_photo_reduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/hhh"
+                        app:srcCompat="@drawable/ic_reduce" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/manager_boss_info_layout_boss_document"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manager_boss_info_layout_boss_photo"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center"
+                    android:text="@string/boss_document"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.xuhao.myapp.View.FixedRatioImageView
+                    android:id="@+id/manager_boss_info_boss_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <ImageButton
+                        android:id="@+id/manager_boss_info_boss_document_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/hhh"
+                        app:srcCompat="@drawable/ic_plus" />
+
+                    <ImageButton
+                        android:id="@+id/manager_boss_info_boss_document_reduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/manager_boss_info_boss_document_plus"
+                        android:background="@color/hhh"
+                        app:srcCompat="@drawable/ic_reduce" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manager_boss_info_layout_boss_document"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/manager_boss_info_text_receipt_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center"
+                    android:text="@string/receipt_info"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/manager_boss_info_text_receipt_info">
+
+                    <TextView
+                        android:id="@+id/manager_boss_info_receipt_type"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="收款方式"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/manager_boss_info_receipt_id"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:text="收款账号"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/manager_boss_info_layout_down_handle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/manager_boss_info_btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/button_pay_course"
+            android:text="删除店铺" />
+
+        <Button
+            android:id="@+id/manager_boss_info_btn_change_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@id/manager_boss_info_btn_delete"
+            android:background="@drawable/button_pay_course"
+            android:text="信息更改"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>

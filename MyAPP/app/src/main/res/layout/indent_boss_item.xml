@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/indent_boss_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/indent_history_item"
+    android:padding="6dp">
+
+    <RelativeLayout
+        android:id="@+id/indent_boss_user_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/indent_boss_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:gravity="center"
+            android:text="@string/user_name"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/indent_boss_indent_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/indent_time"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/indent_boss_up_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/indent_boss_user_name_layout"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/indent_boss_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/user_id"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/indent_boss_course_name_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/indent_boss_user_id"
+            android:padding="2dp"
+            android:text="@string/indent_history_course_name_test"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/indent_boss_indent_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/indent_boss_course_name_quality"
+            android:drawableStart="@drawable/ic_black_yuan"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="5888"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/indent_boss_indent_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/indent_boss_indent_price"
+            android:padding="2dp"
+            android:text="订单状态"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/indent_boss_down_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/indent_boss_indent_type">
+
+            <Button
+                android:id="@+id/indent_boss_handle_indent"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_margin="5dp"
+                android:layout_toStartOf="@id/indent_boss_indent_information"
+                android:background="@drawable/button_indent_use"
+                android:text="去处理"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/indent_boss_indent_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:gravity="center"
+                android:text="订单详情"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

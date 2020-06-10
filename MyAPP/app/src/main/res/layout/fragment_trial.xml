@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TrialFragment">
+
+    <LinearLayout
+        android:id="@+id/trial_layout_up"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/cyna"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/boss_trial"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/trial_layout_down"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/user_info_item_style"
+        android:layout_below="@id/trial_layout_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:drawableStart="@drawable/ic_boss_application"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:id="@+id/trial_text_boss_application"
+            android:text="@string/user_updata_boss_application"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/trial_text_no_boss_application"
+            android:textColor="@color/green"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:text="@string/no_boss_application"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/trial_text_boss_application"
+            android:id="@+id/trial_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>

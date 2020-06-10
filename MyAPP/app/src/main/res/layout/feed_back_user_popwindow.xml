@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/boss_course_item">
+
+    <TextView
+        android:id="@+id/feed_back_user_popwindow_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="@string/feed_back"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/feed_back_user_popwindow_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/feed_back_user_popwindow_title"
+        android:layout_margin="5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/feed_back_user_popwindow_layout_edit_feed"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/feed_back_user_popwindow_line1"
+        android:background="@color/littlewhite">
+
+
+        <EditText
+            android:id="@+id/feed_back_user_popwindow_edit_feed_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/feed_back_edit_text"
+            android:scrollbars="vertical"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/feed_back_user_popwindow_btn_submit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feed_back_user_popwindow_layout_edit_feed"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submit"
+        android:textColor="@color/green"
+        android:textSize="15sp" />
+</RelativeLayout>

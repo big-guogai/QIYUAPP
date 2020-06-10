@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/boss_course_item">
+
+    <TextView
+        android:id="@+id/use_help_popwindow_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="@string/use_help"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/use_help_popwindow_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/use_help_popwindow_title"
+        android:layout_margin="5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/use_help_popwindow_layout_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/use_help_popwindow_line1"
+        android:background="@color/littlewhite">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:text="@string/use_help_text"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/use_help_popwindow_btn_canCle"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/use_help_popwindow_layout_text_view"
+        android:layout_centerHorizontal="true"
+        android:text="@string/yes"
+        android:textColor="@color/green"
+        android:textSize="15sp" />
+</RelativeLayout>

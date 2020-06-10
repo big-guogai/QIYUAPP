@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xuhao.myapp"
+    tools:ignore="ExtraText">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".QiYuApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/qiyu"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:theme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1110208541" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity android:name=".CourseSearchActivity" />
+        <activity android:name=".CourseMainInfoActivity">
+            <intent-filter>
+                <action android:name="cn.itcast.intent.COURSE_MAIN_INFO_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisteredActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".UserInfoChangeActivity" />
+        <activity android:name=".BossRegisteredActivity" />
+        <activity android:name=".BossMainInfoActivity" />
+        <activity android:name=".BossCourseChangeActivity" />
+        <activity android:name=".BossCourseAddActivity" />
+        <activity android:name=".TrialBossInfoActivity" />
+        <activity android:name=".CreateIndentActivity" />
+        <activity android:name=".BossIndentMainInfoActivity" />
+        <activity android:name=".ManagerUserInfoActivity" />
+        <activity android:name=".ManagerBossInfoActivity" />
+        <activity android:name=".ManagerCourseInfoActivity" />
+        <activity android:name=".ManagerIndentInfoActivity" />
+        <activity android:name=".HistoryBrowseActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">奇育</string>
+    <string name="main_course">首页</string>
+    <string name="main_indent">订单</string>
+    <string name="main_information">我的</string>
+    <string name="main_boss">店铺</string>
+    <string name="start_getout">跳过></string>
+    <string name="couse_list_notitle">暂未设置</string>
+    <string name="main_course_dress">成都市</string>
+    <string name="course_search">搜索</string>
+    <string name="main_course_kind_all">全部</string>
+    <string name="main_course_kind_tutor">家教</string>
+    <string name="main_course_kind_child">幼儿</string>
+    <string name="main_course_kind_language">语言</string>
+    <string name="main_course_kind_skill">技能</string>
+    <string name="main_course_kind_design">设计</string>
+    <string name="main_course_kind_it">IT</string>
+    <string name="space_it">\u0020\u0020IT\u0020\u0020</string>
+    <string name="main_course_kind_artistic">艺体</string>
+    <string name="main_course_kind_diploma">学历</string>
+    <string name="main_course_kind_another">其他</string>
+    <string name="course_easy_info">课程简介</string>
+    <string name="position">地址</string>
+    <string name="telephone">联系方式</string>
+    <string name="quantity">购买数量</string>
+    <string name="reload">重新加载</string>
+    <string name="rule_text">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+&#060;&#062;&#064;&#038;</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="substract">-</string>
+    <string name="plus">+</string>
+    <string name="one">1</string>
+    <string name="call_phone">电话咨询</string>
+    <string name="endPrompt">———— 再翻就碰到我底线啦 ————</string>
+    <string name="course_pay">购买</string>
+    <string name="text_login">登录/注册</string>
+    <string name="check_new_apk">检查更新</string>
+    <string name="about_us">关于我们</string>
+    <string name="my_indent">我的订单</string>
+    <string name="my_boss">我的店铺</string>
+    <string name="history_watch">历史浏览</string>
+    <string name="call_human_service">拨打人工客服</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="setting">设置</string>
+    <string name="recommend_friend">推荐好友使用</string>
+    <string name="qq_friend">QQ好友</string>
+    <string name="weixin_friend">微信好友</string>
+    <string name="friend_circle">朋友圈</string>
+    <string name="user_name">用户名：</string>
+    <string name="password">密码：</string>
+    <string name="phone_number">手机号:</string>
+    <string name="not_registered">我还没有注册</string>
+    <string name="login">登录</string>
+    <string name="login_check_agree_rule">登录即代表阅读并同意服务条款</string>
+    <string name="inspection_password">确认密码:</string>
+    <string name="man">男</string>
+    <string name="sex">性别：</string>
+    <string name="woman">女</string>
+    <string name="age">年龄：</string>
+    <string name="registered">注册</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="logout_account">注销账户</string>
+    <string name="personal_information">个人资料</string>
+    <string name="edit">编辑</string>
+    <string name="my_head">我的头像</string>
+    <string name="my_name">我的昵称</string>
+    <string name="my_age">我的年龄</string>
+    <string name="my_sex">我的性别</string>
+    <string name="click_update_boss">点我拥有你的店铺</string>
+    <string name="boss_info">店铺信息</string>
+    <string name="registered_boss">注册店铺</string>
+    <string name="boss_name">店铺名</string>
+    <string name="boss_Introduction">店铺介绍</string>
+    <string name="boss_telephone">联系电话</string>
+    <string name="boss_local">店铺地区</string>
+    <string name="boss_position">详细地址(乡镇/街道/门牌号)</string>
+    <string name="submit">提交</string>
+    <string name="boss_photo">店铺照片</string>
+    <string name="boss_document">营业执照/许可证</string>
+    <string name="course_name">课程名</string>
+    <string name="ID">ID:</string>
+    <string name="update_info">更改信息</string>
+    <string name="boss_id">店铺唯一ID</string>
+    <string name="boss_detailed_position">店铺详细地址</string>
+    <string name="course_info">课程信息</string>
+    <string name="course_introduction">课程介绍</string>
+    <string name="course_price">课程价格</string>
+    <string name="price_type">价格单位</string>
+    <string name="course_type">课程类型</string>
+    <string name="add_course">添加课程商品</string>
+    <string name="boss_trial">店铺审核</string>
+    <string name="info_manager">信息管理</string>
+    <string name="user_updata_boss_application">用户提交的店铺申请</string>
+    <string name="user_id">用户ID：</string>
+    <string name="application_boss_name">申请用名：</string>
+    <string name="application_boss_introduction">店铺介绍：</string>
+    <string name="trial_check">查看并审核</string>
+    <string name="application_info">申请信息</string>
+    <string name="boss_info_user_id">用户ID</string>
+    <string name="boss_main_position">店铺位置</string>
+    <string name="trial_phone_call">审核务必电话咨询情况</string>
+    <string name="application_refuse">申请驳回</string>
+    <string name="trial_pass">审核通过</string>
+    <string name="no_boss_application">暂无店铺申请</string>
+    <string name="registered_become_user_for_qiyu">注册成为奇育用户</string>
+    <string name="change_head">更换头像</string>
+    <string name="cancle">取消</string>
+    <string name="receipt_info">收款信息</string>
+    <string name="indent_history_course_name_test">课程名*10</string>
+    <string name="create_indent">生成订单</string>
+    <string name="indent_all_price">订单总价格</string>
+    <string name="pay">支付</string>
+    <string name="indent_time">订单时间</string>
+    <string name="indent_info">订单详情</string>
+    <string name="key_id">关键ID</string>
+    <string name="user_type">用户类型</string>
+    <string name="course_id">课程ID</string>
+    <string name="indent_id">订单ID</string>
+    <string name="kehu_id">客户ID</string>
+    <string name="account_info">账号详情</string>
+    <string name="history_browse_warning">没有任何浏览记录或相关课程已下架！</string>
+    <string name="yes">确定</string>
+    <string name="use_help_text">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020《奇育》app是为了方便大众能够在网上购买自己喜欢的课程以及销售自己店铺拥有的课程。本app面向大众有两个不同类别用户，下面分别给大家介绍：\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020一、普通用户\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020带带你放假发哦见佛啊矿山法是否能卡司法所金佛我奥委会法分开女款钧阿发我我of挖破。\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020二、店铺拥有者\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020打我都我阿卡破犯法风家外放假哦我我阿发开发了三分看反复爱福家我啊南方大叔大婶大所大所大所奥术大师大所大所大所。\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020jjj\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020kkk\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020lll\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020ooo\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020ooo\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020iii\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020uuu\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020uuu\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020yyy\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020ttt\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020rrr\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020rrr\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020yyy\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020bbb</string>
+    <string name="use_help">使用帮助</string>
+    <string name="user_feed">用户反馈</string>
+    <string name="user_feed_warning">暂无用户提交的反馈！</string>
+    <string name="about_us_text">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020奇育APP的全部开发工作由程序员许浩负责，程序员许浩会的挺多，就是不太会编没用的字，比如说现在这一块内容。真的是很让人打脑壳。 \n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020作者姓名：许浩 \n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020作者年龄：20 \n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020作者性别：男 \n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020婚姻情况：未婚 \n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020技术等级：入门程序员 ......</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 应用界面启动时欢迎界面动画 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--&lt;!&ndash; 透明度动画 &ndash;&gt;-->
+    <!--<alpha-->
+        <!--android:fromAlpha="0.3"-->
+        <!--android:toAlpha="1.0"-->
+        <!--android:duration="1000"-->
+        <!--android:startOffset="0"/>-->
+
+    <!-- 缩放动画 -->
+    <scale
+        android:fromXScale="0.5"
+        android:fromYScale="0.5"
+        android:toXScale="1.0"
+        android:toYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:startOffset="0"
+        android:duration="1000"
+        android:fillBefore="true"/>
+</set>

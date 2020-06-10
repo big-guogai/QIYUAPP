@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:id="@+id/setting_layout_up"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/cyna"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/setting_button_back"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_main_course_search_back"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setting_logout_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_layout_up"
+        android:drawableStart="@drawable/ic_settings_black_24dp"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="@string/logout_account"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/setting_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_logout_account"
+        android:drawableStart="@drawable/ic_broom"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="内存清理"
+        android:textSize="13sp" />
+</RelativeLayout>

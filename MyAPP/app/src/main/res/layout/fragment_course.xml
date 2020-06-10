@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CourseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/main_course_up"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/cyna"
+        android:padding="8dp">
+
+        <com.xuhao.myapp.View.CircleImageView
+            android:id="@+id/main_course_head"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/button_main_course_head"/>
+
+        <Button
+            android:id="@+id/main_course_dress"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_main_course_dress"
+            android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+            android:maxWidth="120dp"
+            android:text="@string/main_course_dress" />
+
+        <Button
+            android:id="@+id/main_course_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_main_course_search"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:gravity="center_vertical|start"
+            android:hint="@string/course_search"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_course_up"
+        android:background="@color/cyna"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/main_course_kind"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_main_course_kind" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_course_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

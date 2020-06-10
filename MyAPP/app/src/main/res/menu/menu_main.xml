@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_main_course"
+        android:checked="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/main_course" />
+    <item
+        android:id="@+id/menu_main_boss"
+        android:icon="@drawable/ic_personal_video_black_24dp"
+        android:title="" />
+    <item
+        android:id="@+id/menu_main_indent"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="" />
+    <item
+        android:id="@+id/menu_main_information"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="@string/main_information" />
+
+</menu>
